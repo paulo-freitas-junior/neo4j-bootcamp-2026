@@ -29,3 +29,14 @@ MERGE (u)-[:ASSISTIU]->(f);
 MATCH (f:Filme {titulo: 'Inception'})
 MATCH (g:Genero {tipo: 'Ficção Científica'})
 MERGE (f)-[:PERTENCE_A]->(g);
+
+
+// Perguntas iniciais
+// ------------------
+
+
+// 1. Quem pertence a quem?
+MATCH p=()-[:PERTENCE_A]->() RETURN p LIMIT 25;
+
+// 2. Quem assistiu quais filmes?
+MATCH a=()-[:ASSISTIU]->() RETURN a LIMIT 25;
