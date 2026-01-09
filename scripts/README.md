@@ -15,6 +15,7 @@
 - Certifique-se de ter em mãos o **usuário** (geralmente neo4j) e a **senha** que foi gerada automaticamente quando foi criado o banco (**aquele arquivo .txt**)
 ![Instâncias](/images/instancias.jpg)
 
+- Clique na opção **Query** para poder ter acesso às informações da Instância que deseja conectar
 - Copie o **HOST**, **usuário** e **senha** gerados.
 ![Instâncias](/images/query.jpg)
 
