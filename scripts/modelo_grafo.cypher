@@ -7,7 +7,7 @@
 
 // Inserindo dados de USUÁRIO e AVALIADOR (Nós)
 MERGE (:Usuario&Avaliador {nome: 'Alice'});
-MERGE (:Usuario {nome: 'Bob'})
+MERGE (:Usuario {nome: 'Bob'});
 
 // Inserindo dados de FILME (Nó)
 MERGE (:Filme {titulo: 'Inception'});
@@ -23,9 +23,9 @@ MERGE (u)-[:ASSISTIU {data: '2025'}]->(f);  // Relacionamento com atributo de Da
 
 MATCH (u:Usuario {nome: 'Bob'}) 
 MATCH (f:Filme {titulo: 'Titanic'})
-MERGE (u)-[:ASSISTIU]->(f)
+MERGE (u)-[:ASSISTIU]->(f);
 
 // Criando um RELACIONAMENTO [PERTENCE] entre FILME E GÊNERO
-MATCH (f:Filme {nome: 'Inception'})
+MATCH (f:Filme {titulo: 'Inception'})
 MATCH (g:Genero {tipo: 'Ficção Científica'})
-MERGE (f)-[:PERTENCE_A]->(g)
+MERGE (f)-[:PERTENCE_A]->(g);
