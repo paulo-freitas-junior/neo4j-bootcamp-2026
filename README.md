@@ -1,3 +1,12 @@
+<div align="center">
+  <img src="/images/logo_bootcamp.jpg" width="100%" alt="Neo4J - Análise de Dados">
+</div>
+
+---
+
+[![Status](https://img.shields.io/badge/status-em_desenvolvimento-yellow)](https://github.com/paulo-freitas-junior/neo4j-bootcamp-2026/blob/main/README.md)
+[![Licença](https://img.shields.io/badge/licença-MIT-blue)](https://github.com/paulo-freitas-junior/neo4j-bootcamp-2026/blob/main/LICENSE)
+
 # 📊 Análise de Dados com Neo4j
 
 Este repositório apresenta um projeto de **análise de dados utilizando o Neo4j**, um banco de dados orientado a grafos que permite explorar relacionamentos complexos de forma eficiente e intuitiva.
