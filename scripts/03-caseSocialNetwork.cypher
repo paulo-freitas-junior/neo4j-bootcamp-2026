@@ -17,7 +17,7 @@
 
 // Criando o Nó Pessoa com seus atributos e dados
 CREATE (:Pessoa {nome: 'Ana', idade: 28, cidade: 'São Paulo'});
-CREATE (:Pessoa {nome: 'Bruno', idade: 30, cidade: 'Rio de Janeioro'});
+CREATE (:Pessoa {nome: 'Bruno', idade: 30, cidade: 'Rio de Janeiro'});
 CREATE (:Pessoa {nome: 'Clara', idade: 25, cidade: 'Belo Horizonte'});
 
 // Criando o Nó Grupo com seus atributos e dados
@@ -38,26 +38,30 @@ CREATE (:Comentario {id: 102, texto: 'Gostei das dicas', data: '2026-01-09'});
 //---------------------------------------------
 
 // Amizades
-MATCH (ana:Pessoa {nome: "Ana"}),(bruno:Pessoa {nome: "Bruno"})
+MATCH (ana:Pessoa {nome: "Ana"}), (bruno:Pessoa {nome: "Bruno"})
 CREATE (ana)-[:AMIGO_DE {desde: date('2020-05-10')}]->(bruno),
-       (bruno)-[:AMIGO_DE {desde: date('2020-51-10')}]->(ana);
+       (bruno)-[:AMIGO_DE {desde: date('2020-05-10')}]->(ana);
 
-MATCH (ana:Pessoa {nome: "Ana"}),(clara:Pessoa {nome: "Clara"})
+MATCH (ana:Pessoa {nome: "Ana"}), (clara:Pessoa {nome: "Clara"})
 CREATE (ana)-[:AMIGO_DE {desde: date('2022-01-15')}]->(clara),
        (clara)-[:AMIGO_DE {desde: date('2022-01-15')}]->(ana);
 
 // Postagens por Pessoa
-MATCH (ana:Pessoa {nome: "Ana"}),(post1:Post {id: 1})
+MATCH (ana:Pessoa {nome: "Ana"})
+MATCH (post1:Post {id: 1})
 CREATE (ana)-[:POSTOU]->(post1);
 
-MATCH (bruno:Pessoa {nome: "Bruno"}),(post2:Post {id: 2}) 
+MATCH (bruno:Pessoa {nome: "Bruno"})
+MATCH (post2:Post {id: 2})
 CREATE (bruno)-[:POSTOU]->(post2);
 
 // Postagens em Grupos
-MATCH (post1:Post {id: 1}),(grupo1:Grupo {grupo: "Neo4J Lovers"})
+MATCH (post1:Post {id: 1})
+MATCH (grupo1:Grupo {nome: "Neo4j Lovers"})
 CREATE (post1)-[:PUBLICADO_EM]->(grupo1);
 
-MATCH (post2:Post {id: 2}),(grupo2:Grupo {grupo: "Dev Brasil"})
+MATCH (post2:Post {id: 2})
+MATCH (grupo2:Grupo {nome: "Dev Brasil"})
 CREATE (post2)-[:PUBLICADO_EM]->(grupo2);
 
 // Comentários em Posts
@@ -70,8 +74,23 @@ MATCH (comentario1:Comentario {id:101}),(post1:Post {id: 1})
 CREATE (comentario1)-[:COMENTA]->(post1);
 
     // Bruno
-MATCH (bruno:Pessoa {nome: "Bruno"}),(comentário2:Comentario {id: 102})
-CREATE (comentario2)-[:COMENTOU {data date("2026-01-10")}]->(comentario2);
+MATCH (bruno:Pessoa {nome: "Bruno"}),(comentario2:Comentario {id: 102})
+CREATE (bruno)-[:COMENTOU {data: date("2026-01-10")}]->(comentario2);
 
-MATCH (comentario2:Comentario {id:102}),(post1:Post {id:1}) 
-CREATE (comentario2)-[:COMENTOU]->(post1);
+MATCH (comentario2:Comentario {id:102}),(post1:Post {id:1})
+CREATE (comentario2)-[:COMENTA]->(post1);
+
+// Pessoas que fazem parte de Grupos
+
+    // Ana
+MATCH (ana:Pessoa {nome: "Ana"}),(grupo1:Grupo{nome: "Neo4j Lovers"})
+CREATE (ana)-[:MEMBRO_DE {desde: date("2021-03-01")}]->(grupo1);
+
+    // Bruno
+MATCH (bruno:Pessoa {nome:"Bruno"}),(grupo2:Grupo{nome:"Dev Brasil"})
+CREATE (bruno)-[:MEMBRO_DE {desde: date("2020-10-20")}]->(grupo2);
+
+    // Clara
+MATCH (clara:Pessoa {nome:"Clara"}),(grupo1:Grupo{nome:"Neo4j Lovers"})
+CREATE (clara)-[:MEMBRO_DE {desde: date("2022-06-15")}]->(grupo1);
+
