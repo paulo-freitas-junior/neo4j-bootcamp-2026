@@ -3,7 +3,14 @@
 // Pergunta: Quais usuários são avaliadores de filmes?
 
 // MATCH - Localizar
-// MERGE - Gerar o Relacionamento
+
+// MERGE - Age como uma combinação de MATCH E CREATE. Ele verifica se o padrão já existe antes de criá-lo
+//         garatindo que o nó ou relacionamento exista, mas EVITANDO DUPLICATAS.
+
+// AÇÃO: Tenta encontrar o padrão (MATCH). Se encontrado, usa-o. Se não, cria o novo (CREATE).
+// RESULTADO: Garante que o nó/relacionamento exista apenas uma vez com as propriedades especificadas.
+// PERFORMANCE: É mais lento que o CREATE porque realiza verificações e bloqueios (locks) para garantir a consistência.
+// USO: Ideal para cenários de atualização de dados (upsert), onde você quer evitar duplicatas.
 
 // Inserindo dados de USUÁRIO e AVALIADOR (Nós)
 MERGE (:Usuario&Avaliador {nome: 'Alice'});
@@ -33,7 +40,6 @@ MERGE (f)-[:PERTENCE_A]->(g);
 
 // Perguntas iniciais
 // ------------------
-
 
 // 1. Quem pertence a quem?
 MATCH p=()-[:PERTENCE_A]->() RETURN p LIMIT 25;

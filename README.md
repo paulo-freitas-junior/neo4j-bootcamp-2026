@@ -43,7 +43,7 @@ Este projeto tem como objetivo:
 
 ## 📂 Estrutura do Repositório
 - `data/` → Conjunto de dados utilizados para análise
-- `notebooks/` → Jupyter Notebooks com exemplos de consultas e análises
+- `projects/` → Projetos criados no bootcamp conforme cada módulo de estudo
 - `scripts/` → Scripts Python para integração com Neo4j
 - `docs/` → Documentação complementar
 

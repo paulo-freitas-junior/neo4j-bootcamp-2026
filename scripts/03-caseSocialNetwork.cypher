@@ -93,4 +93,3 @@ CREATE (bruno)-[:MEMBRO_DE {desde: date("2020-10-20")}]->(grupo2);
     // Clara
 MATCH (clara:Pessoa {nome:"Clara"}),(grupo1:Grupo{nome:"Neo4j Lovers"})
 CREATE (clara)-[:MEMBRO_DE {desde: date("2022-06-15")}]->(grupo1);
-
