@@ -50,10 +50,67 @@ CREATE (g14:Genre {name:"Comedy"});
 CREATE (g15:Genre {name:"Historical/Drama"});
 CREATE (g16:Genre {name:"Political/Drama"});
 
-// Pessoas
+// Atores
 CREATE (a1:Actor {name:"Leonardo DiCaprio"});
+CREATE (a2:Actor {name:"Joseph Gordon-Levitt"});
+CREATE (a3:Actor {name:"Tom Hardy"});
+CREATE (a4:Actor {name:"Matthew McConaughey"});
+CREATE (a5:Actor {name:"Anne Hathaway"});
+CREATE (a6:Actor {name:"Christian Bale"});
+CREATE (a7:Actor {name:"Heath Ledger"});
+CREATE (a8:Actor {name:"Keanu Reeves"});
+CREATE (a9:Actor {name:"Carrie-Anne Moss"});
+CREATE (a10:Actor {name:"John Travolta"});
+CREATE (a11:Actor {name:"Uma Thurman"});
+CREATE (a12:Actor {name:"Russell Crowe"});
+CREATE (a13:Actor {name:"Joaquin Phoenix"});
+CREATE (a14:Actor {name:"Kate Winslet"});
+CREATE (a15:Actor {name:"Sam Worthington"});
+CREATE (a16:Actor {name:"Zoe Saldana"});
+CREATE (a17:Actor {name:"Brad Pitt"});
+CREATE (a18:Actor {name:"Edward Norton"});
+CREATE (a19:Actor {name:"Bryan Cranston"});
+CREATE (a20:Actor {name:"Aaron Paul"});
+CREATE (a21:Actor {name:"Millie Bobby Brown"});
+CREATE (a21:Actor {name:"Finn Wolfhard"});
+CREATE (a22:Actor {name:"Emilia Clarke"});
+CREATE (a23:Actor {name:"Kit Harington"});
+CREATE (a24:Actor {name:"Jennifer Aniston"});
+CREATE (a25:Actor {name:" Matthew Perry"});
+CREATE (a26:Actor {name:"Claire Foy"});
+CREATE (a27:Actor {name:"Olivia Colman"});
+CREATE (a28:Actor {name:"Steve Carell"});
+CREATE (a29:Actor {name:"Rainn Wilson"});
+CREATE (a30:Actor {name:"Cillian Murphy"});
+CREATE (a31:Actor {name:"Helen McCrory"});
+CREATE (a31:Actor {name:"James Gandolfin"});
+CREATE (a32:Actor {name:"Lorraine Bracco"});
+CREATE (a33:Actor {name:"Kevin Spacey"});
+CREATE (a34:Actor {name:"Robin Wright"});
+CREATE (a35:Actor {name:"Wagner Moura"});
+CREATE (A36:Actor {name:"Pedro Pascal"});
+
+// Diretores
 CREATE (d1:Director {name:"Christopher Nolan"});
 CREATE (d2:Director {name:"James Cameron"});
+CREATE (d3:Director {name:"Alejandro G. Iñárritu"});
+CREATE (d4:Director {name:"Lana Wachowsk"});
+CREATE (d4:Director {name:"Lilly Wachowski"});
+CREATE (d5:Director {name:"Quentin Tarantino"});
+CREATE (d6:Director {name:"Ridley Scott"});
+CREATE (d7:Director {name:"David Fincher"});
+CREATE (d8:Director {name:"Vince Gilligan"});
+CREATE (d9:Director {name:"The Duffer Brothers"});
+CREATE (d10:Director {name:"David Benioff"});
+CREATE (d11:Director {name:"D.B. Weiss"});
+CREATE (d12:Director {name:"David Crane"});
+CREATE (d13:Director {name:"Marta Kauffman"});
+CREATE (d14:Director {name:"Peter Morgan"});
+CREATE (d15:Director {name:"Greg Daniels"});
+CREATE (d16:Director {name:"Steven Knight"});
+CREATE (d17:Director {name:"David Chase"});
+CREATE (d18:Director {name:"Beau Willimon"});
+CREATE (d19:Director {name:"Chris Brancato"});
 
 // Relacionamentos IN_GENRE para Filmes
 MATCH (m:Movie {title:"Inception"}), (g:Genre {name:"Sci-Fi/Thriller"})
@@ -178,18 +235,136 @@ CREATE (u)-[:WATCHED {rating:4}]->(s);
 MATCH (u:User {name:"Elaine"}), (s:Serie {title:"Narcos"})
 CREATE (u)-[:WATCHED {rating:4.5}]->(s);
 
-// Exemplos de ACTED_IN (Leonardo DiCaprio em 3 filmes)
+
+// Exemplos de ACTED_IN (Atores que atuaram em Filmes)
 MATCH (a:Actor {name:"Leonardo DiCaprio"}), (m:Movie {title:"Inception"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Joseph Gordon-Levitt"}), (m:Movie {title:"Inception"})
 CREATE (a)-[:ACTED_IN]->(m);
 
 MATCH (a:Actor {name:"Leonardo DiCaprio"}), (m:Movie {title:"The Revenant"})
 CREATE (a)-[:ACTED_IN]->(m);
 
+MATCH (a:Actor {name:"Tom Hardy"}), (m:Movie {title:"The Revenant"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Matthew McConaughey"}), (m:Movie {title:"Interstellar"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Anne Hathaway"}), (m:Movie {title:"Interstellar"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Christian Bale"}), (m:Movie {title:"The Dark Knight"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Heath Ledger"}), (m:Movie {title:"The Dark Knight"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Keanu Reeves"}), (m:Movie {title:"The Matrix"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Carrie-Anne Moss"}), (m:Movie {title:"The Matrix"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"John Travolta"}), (m:Movie {title:"Pulp Fiction"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Uma Thurman"}), (m:Movie {title:"Pulp Fiction"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Russell Crowe"}), (m:Movie {title:"Gladiator"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Joaquin Phoenix"}), (m:Movie {title:"Gladiator"})
+CREATE (a)-[:ACTED_IN]->(m);
+
 MATCH (a:Actor {name:"Leonardo DiCaprio"}), (m:Movie {title:"Titanic"})
 CREATE (a)-[:ACTED_IN]->(m);
 
-// Exemplos de DIRECTED (Christopher Nolan em 3 filmes)
+MATCH (a:Actor {name:"Kate Winslet"}), (m:Movie {title:"Titanic"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Sam Worthington"}), (m:Movie {title:"Avatar"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Zoe Saldana"}), (m:Movie {title:"Avatar"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Brad Pitt"}), (m:Movie {title:"Fight Club"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+MATCH (a:Actor {name:"Edward Norton"}), (m:Movie {title:"Fight Club"})
+CREATE (a)-[:ACTED_IN]->(m);
+
+
+// Exemplos de ACTED_IN (Atores que atuaram em Series)
+MATCH (a:Actor {name:"Bryan Cranston"}), (s:Serie {title:"Breaking Bad"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Aaron Paul"}), (s:Serie {title:"Breaking Bad"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Millie Bobby Brown"}), (s:Serie {title:"Stranger Things"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Finn Wolfhard"}), (s:Serie {title:"Stranger Things"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Emilia Clarke"}), (s:Serie {title:"Game of Thrones"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Kit Harington"}), (s:Serie {title:"Game of Thrones"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Jennifer Aniston"}), (s:Serie {title:"Friends"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Matthew Perry"}), (s:Serie {title:"Friends"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Claire Foy"}), (s:Serie {title:"The Crown"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Olivia Colman"}), (s:Serie {title:"The Crown"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Steve Carell"}), (s:Serie {title:"The Office (US)"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Rainn Wilson"}), (s:Serie {title:"The Office (US)"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Cillian Murphy"}), (s:Serie {title:"Peaky Blinders"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Helen McCrory"}), (s:Serie {title:"Peaky Blinders"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"James Gandolfini"}), (s:Serie {title:"The Sopranos"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Lorraine Bracco"}), (s:Serie {title:"The Sopranos"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Kevin Spacey"}), (s:Serie {title:"House of Cards"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Robin Wright"}), (s:Serie {title:"House of Cards"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Wagner Moura"}), (s:Serie {title:"Narcos"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+MATCH (a:Actor {name:"Pedro Pascal"}), (s:Serie {title:"Pedro Pascal"})
+CREATE (a)-[:ACTED_IN]->(s);
+
+
+// Exemplos de DIRECTED (Diretos que dirigiram Filmes)
 MATCH (d:Director {name:"Christopher Nolan"}), (m:Movie {title:"Inception"})
+CREATE (d)-[:DIRECTED]->(m);
+
+MATCH (d:Director {name:"Alejandro G. Iñárritu"}), (m:Movie {title:"The Revenant"})
 CREATE (d)-[:DIRECTED]->(m);
 
 MATCH (d:Director {name:"Christopher Nolan"}), (m:Movie {title:"Interstellar"})
@@ -198,9 +373,61 @@ CREATE (d)-[:DIRECTED]->(m);
 MATCH (d:Director {name:"Christopher Nolan"}), (m:Movie {title:"The Dark Knight"})
 CREATE (d)-[:DIRECTED]->(m);
 
-// Exemplos de DIRECTED (James Cameron em 2 filmes)
+MATCH (d:Director {name:"Lana Wachowski"}), (m:Movie {title:"The Matrix"})
+CREATE (d)-[:DIRECTED]->(m);
+
+MATCH (d:Director {name:"Lilly Wachowski"}), (m:Movie {title:"The Matrix"})
+CREATE (d)-[:DIRECTED]->(m);
+
+MATCH (d:Director {name:"Quentin Tarantino"}), (m:Movie {title:"Pulp Fiction"})
+CREATE (d)-[:DIRECTED]->(m);
+
+MATCH (d:Director {name:"Ridley Scott"}), (m:Movie {title:"Gladiator"})
+CREATE (d)-[:ACTED_IN]->(m);
+
 MATCH (d:Director {name:"James Cameron"}), (m:Movie {title:"Titanic"})
 CREATE (d)-[:DIRECTED]->(m);
 
 MATCH (d:Director {name:"James Cameron"}), (m:Movie {title:"Avatar"})
 CREATE (d)-[:DIRECTED]->(m);
+
+MATCH (d:Director {name:"David Fincher"}), (m:Movie {title:"Fight Club"})
+CREATE (d)-[:DIRECTED]->(m);
+
+
+// Exemplos de DIRECTED (Diretos que dirigiram Series)
+MATCH (d:Director {name:"Vince Gilligan"}), (s:Serie {title:"Breaking Bad"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"The Duffer Brothers"}), (s:Serie {title:"Stranger Things"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"David Benioff"}), (s:Serie {title:"Game of Thrones"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"D.B. Weiss"}), (s:Serie {title:"Game of Thrones"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"David Crane"}), (s:Serie {title:"Friends"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Marta Kauffman"}), (s:Serie {title:"Friends"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Peter Morgan"}), (s:Serie {title:"The Crown"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Greg Daniels"}), (s:Serie {title:"The Office (US)"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Steven Knight"}), (s:Serie {title:"Peaky Blinders"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"David Chase"}), (s:Serie {title:"The Sopranos"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Beau Willimon"}), (s:Serie {title:"House of Cards"})
+CREATE (d)-[:DIRECTED]->(s);
+
+MATCH (d:Director {name:"Chris Brancato"}), (s:Serie {title:"Narcos"})
+CREATE (d)-[:DIRECTED]->(s);
