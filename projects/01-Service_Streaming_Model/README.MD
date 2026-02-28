@@ -80,9 +80,9 @@ Modelar e criar um pequeno grafo de conhecimento para este serviço.
 - **Azul Claro:** Users
 - **Verde:** Atores/Atrizes
 - **Rosa:** Diretores/Diretoras
-- **Roxo:** Gênero do Filme
-- **Laranja:** Filme
-- **Marrom Claro:** Série
+- **Roxo:** Gênero dos Filmes e Séries
+- **Laranja:** Filmes
+- **Amarelo:** Séries
 
 ### Script em Cypher
 
