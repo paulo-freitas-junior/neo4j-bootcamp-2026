@@ -9,7 +9,7 @@
 
 # 📊 Análise de Dados com Neo4j
 
-Este repositório apresenta um projeto de **análise de dados utilizando o Neo4j**, um banco de dados orientado a grafos que permite explorar relacionamentos complexos de forma eficiente e intuitiva.
+Repositório do bootcamp **análise de dados utilizando o Neo4j**, banco de dados orientado a grafos que permite explorar relacionamentos complexos de forma eficiente e intuitiva.
 
 ---
 
@@ -19,8 +19,8 @@ Sua linguagem de consulta, **Cypher**, é declarativa e otimizada para explorar 
 
 ---
 
-## 🎯 Objetivo do Projeto
-Este projeto tem como objetivo:
+## 🎯 Objetivo do Bootcamp
+Este repositório tem como objetivo:
 - Demonstrar como o Neo4j pode ser aplicado em **análise de dados conectados**.
 - Explorar **consultas em grafos** para identificar padrões, comunidades e insights ocultos.
 - Integrar algoritmos de **Graph Data Science** (como PageRank, detecção de comunidades e caminhos mais curtos).
@@ -38,6 +38,7 @@ Este projeto tem como objetivo:
 - **Python** (para integração e análise de dados)
 - **Biblioteca Neo4j Python Driver**
 - **Graph Data Science Library (GDS)**
+- **Visual Studio Code** elaboração dos scripts em Cypher
 
 ---
 
@@ -46,6 +47,8 @@ Este projeto tem como objetivo:
 - `projects/` → Projetos criados no bootcamp conforme cada módulo de estudo
 - `scripts/` → Scripts Python para integração com Neo4j
 - `docs/` → Documentação complementar
+- `images/` → Pasta contendo imagens utilizadas nos projetos
+- `notebooks/` → Pasta contendo arquivos de Jupyter Notebooks para querys híbridas (Cypher e Python)
 
 ---
 

@@ -94,7 +94,7 @@ CREATE (A36:Actor {name:"Pedro Pascal"});
 CREATE (d1:Director {name:"Christopher Nolan"});
 CREATE (d2:Director {name:"James Cameron"});
 CREATE (d3:Director {name:"Alejandro G. Iñárritu"});
-CREATE (d4:Director {name:"Lana Wachowsk"});
+CREATE (d4:Director {name:"Lana Wachowski"});
 CREATE (d4:Director {name:"Lilly Wachowski"});
 CREATE (d5:Director {name:"Quentin Tarantino"});
 CREATE (d6:Director {name:"Ridley Scott"});
