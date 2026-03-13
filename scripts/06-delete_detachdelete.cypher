@@ -10,7 +10,7 @@ MATCH (p:Pessoa{name:"Joao"})-[r:CONHECE]-()
 DELETE p,r;
 
 // Exemplo 2
-// Deleta apenas os Relacionamentos referentes ao Nó João
+// Deleta apenas os Relacionamentos referentes à 'CONHECE' ao Nó João
 MATCH (p:Pessoa{name:"João"})-[r:CONHECE]-()
 DELETE r;
 

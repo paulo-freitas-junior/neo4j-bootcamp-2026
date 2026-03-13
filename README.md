@@ -45,7 +45,7 @@ Este repositório tem como objetivo:
 ## 📂 Estrutura do Repositório
 - `data/` → Conjunto de dados utilizados para análise
 - `projects/` → Projetos criados no bootcamp conforme cada módulo de estudo
-- `scripts/` → Scripts Python para integração com Neo4j
+- `scripts/` → Scripts e Cypher e Python para integração com Neo4j
 - `docs/` → Documentação complementar
 - `images/` → Pasta contendo imagens utilizadas nos projetos
 - `notebooks/` → Pasta contendo arquivos de Jupyter Notebooks para querys híbridas (Cypher e Python)
