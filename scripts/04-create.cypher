@@ -9,7 +9,7 @@ CREATE (:Bootcamp {descricao:"Primeiro nó com 1 label"});
 CREATE (:Teste&Dio {descricao:"Primeiro nó com 2 labels"});
 
 // Criação Nó com duplo label e seu relacionamento com nó Tester
-CREATE (:Teste&Dio {descricao:"Nó"})-[r:FOI_TESTADO]->(Tester);
+CREATE (:Teste&Dio {descricao:"Nó"})-[r:FOI_TESTADO]->(:Tester);
 
 // Exemplo criação de nós e relacionamentos
 CREATE
