@@ -21,3 +21,19 @@ WITH ROW
  INTRANSACTIONS OF - Permite a definição de valor de controle de carregamento em lotes evitando
                      possíveis sobrecarga de dados. (batches)
 */
+
+
+// Visualizando o Schema do banco de dados
+CALL db.schema.visualization()
+
+
+// Exemplo de uso do CALL
+MATCH (t:Team)
+CALL (t) {
+       MATCH (p:Player)-[r:PLAYS_ON]->(t)  // Subquerie
+       RETURN COLLECT(p) as Players, r
+}
+RETURN (t) as Teams, Players, r
+
+
+//
