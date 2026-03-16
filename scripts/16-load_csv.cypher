@@ -24,7 +24,7 @@ WITH ROW
 
 
 // Visualizando o Schema do banco de dados
-CALL db.schema.visualization()
+CALL db.schema.visualization();
 
 
 // Exemplo 01 
@@ -34,9 +34,14 @@ CALL (t) {
        MATCH (p:Player)-[r:PLAYS_ON]->(t)  // Subquerie
        RETURN COLLECT(p) as Players, r
 }
-RETURN (t) as Teams, Players, r
+RETURN (t) as Teams, Players, r;
 
 
 // Exemplo 02
 // Lendo um arquivo .CSV de filmes existente na pasta 'data' (Este exemplo visa uso do VS Code)
-LOAD CSV WITH HEADERS FROM '/data/film.csv'
+LOAD CSV WITH HEADERS FROM 'https://github.com/paulo-freitas-junior/neo4j-bootcamp-2026/blob/main/data/film.csv' AS row
+MERGE (m:Movie {movieId: toInteger(row.movedId)})  // cria um nó Movie e para cada linha do arquivo .csv cria id (numérico inteiro) do filme
+SET m.title = row.title,
+    m.genres = split(row.genres, '|')
+RETURN m
+LIMIT 100;

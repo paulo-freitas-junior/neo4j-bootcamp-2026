@@ -1,0 +1,101 @@
+﻿Coluna1;movieId;title;genres
+0;1;The Shawshank Redemption;Drama
+1;2;The Godfather;Crime|Drama
+2;3;The Dark Knight;Action|Crime|Drama
+3;4;Pulp Fiction;Crime|Drama
+4;5;Forrest Gump;Drama|Romance
+5;6;Inception;Action|Adventure|Sci-Fi
+6;7;Fight Club;Drama
+7;8;The Matrix;Action|Sci-Fi
+8;9;Goodfellas;Crime|Drama
+9;10;The Lord of the Rings: The Fellowship of the Ring;Adventure|Fantasy
+10;11;The Lord of the Rings: The Two Towers;Adventure|Fantasy
+11;12;The Lord of the Rings: The Return of the King;Adventure|Fantasy
+12;13;Star Wars: Episode IV - A New Hope;Action|Adventure|Sci-Fi
+13;14;Star Wars: Episode V - The Empire Strikes Back;Action|Adventure|Sci-Fi
+14;15;Star Wars: Episode VI - Return of the Jedi;Action|Adventure|Sci-Fi
+15;16;The Silence of the Lambs;Crime|Drama|Thriller
+16;17;Se7en;Crime|Drama|Thriller
+17;18;Interstellar;Adventure|Drama|Sci-Fi
+18;19;Parasite;Comedy|Drama|Thriller
+19;20;Whiplash;Drama|Music
+20;21;Gladiator;Action|Adventure|Drama
+21;22;The Prestige;Drama|Mystery|Sci-Fi
+22;23;The Departed;Crime|Drama|Thriller
+23;24;The Green Mile;Crime|Drama|Fantasy
+24;25;The Lion King;Animation|Adventure|Drama
+25;26;Back to the Future;Adventure|Comedy|Sci-Fi
+26;27;The Pianist;Biography|Drama|Music
+27;28;City of God;Crime|Drama
+28;29;Spirited Away;Animation|Adventure|Fantasy
+29;30;The Usual Suspects;Crime|Drama|Mystery
+30;31;Saving Private Ryan;Drama|War
+31;32;Schindler's List;Biography|Drama|History
+32;33;Avengers: Endgame;Action|Adventure|Sci-Fi
+33;34;Avengers: Infinity War;Action|Adventure|Sci-Fi
+34;35;Iron Man;Action|Adventure|Sci-Fi
+35;36;The Avengers;Action|Adventure|Sci-Fi
+36;37;Doctor Strange;Action|Adventure|Fantasy
+37;38;Black Panther;Action|Adventure|Sci-Fi
+38;39;Guardians of the Galaxy;Action|Adventure|Comedy
+39;40;Thor: Ragnarok;Action|Adventure|Comedy
+40;41;Captain America: The Winter Soldier;Action|Adventure|Sci-Fi
+41;42;Captain America: Civil War;Action|Adventure|Sci-Fi
+42;43;Ant-Man;Action|Adventure|Comedy
+43;44;Ant-Man and the Wasp;Action|Adventure|Comedy
+44;45;Shutter Island;Mystery|Thriller
+45;46;Django Unchained;Drama|Western
+46;47;The Hateful Eight;Crime|Drama|Mystery
+47;48;Kill Bill: Vol. 1;Action|Crime|Thriller
+48;49;Kill Bill: Vol. 2;Action|Crime|Thriller
+49;50;Reservoir Dogs;Crime|Drama|Thriller
+50;51;Once Upon a Time in Hollywood;Comedy|Drama
+51;52;Inglourious Basterds;Adventure|Drama|War
+52;53;The Wolf of Wall Street;Biography|Comedy|Crime
+53;54;Titanic;Drama|Romance
+54;55;Avatar;Action|Adventure|Fantasy
+55;56;Avatar: The Way of Water;Action|Adventure|Fantasy
+56;57;The Truman Show;Comedy|Drama|Sci-Fi
+57;58;Eternal Sunshine of the Spotless Mind;Drama|Romance|Sci-Fi
+58;59;Her;Drama|Romance|Sci-Fi
+59;60;La La Land;Comedy|Drama|Music
+60;61;The Social Network;Biography|Drama
+61;62;The Big Short;Biography|Comedy|Drama
+62;63;Moneyball;Biography|Drama|Sport
+63;64;The Blind Side;Biography|Drama|Sport
+64;65;The Pursuit of Happyness;Biography|Drama
+65;66;American Beauty;Drama
+66;67;Requiem for a Dream;Drama
+67;68;Donnie Darko;Drama|Mystery|Sci-Fi
+68;69;Memento;Mystery|Thriller
+69;70;The Sixth Sense;Drama|Mystery|Thriller
+70;71;Unbreakable;Drama|Mystery|Sci-Fi
+71;72;Split;Horror|Thriller
+72;73;Glass;Drama|Sci-Fi|Thriller
+73;74;Signs;Drama|Mystery|Sci-Fi
+74;75;The Village;Drama|Mystery|Thriller
+75;76;Oldboy;Action|Drama|Mystery
+76;77;Memories of Murder;Crime|Drama|Mystery
+77;78;The Handmaiden;Drama|Romance|Thriller
+78;79;Train to Busan;Action|Horror|Thriller
+79;80;Peninsula;Action|Horror|Thriller
+80;81;Okja;Adventure|Drama|Sci-Fi
+81;82;Snowpiercer;Action|Drama|Sci-Fi
+82;83;The Host;Drama|Horror|Sci-Fi
+83;84;The Man from Nowhere;Action|Crime|Thriller
+84;85;I Saw the Devil;Crime|Drama|Thriller
+85;86;The Chaser;Crime|Drama|Thriller
+86;87;The Wailing;Drama|Horror|Mystery
+87;88;Burning;Drama|Mystery|Romance
+88;89;Shoplifters;Crime|Drama
+89;90;Drive;Crime|Drama|Thriller
+90;91;Baby Driver;Action|Crime|Drama
+91;92;The Notebook;Drama|Romance
+92;93;A Walk to Remember;Drama|Romance
+93;94;500 Days of Summer;Comedy|Drama|Romance
+94;95;The Fault in Our Stars;Drama|Romance
+95;96;Me Before You;Drama|Romance
+96;97;Love Actually;Comedy|Drama|Romance
+97;98;Notting Hill;Comedy|Drama|Romance
+98;99;Pretty Woman;Comedy|Drama|Romance
+99;100;Runaway Bride;Comedy|Drama|Romance
