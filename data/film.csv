@@ -1,0 +1,101 @@
+movieId,title,genres
+1,The Shawshank Redemption,Drama
+2,The Godfather,Crime|Drama
+3,The Dark Knight,Action|Crime|Drama
+4,Pulp Fiction,Crime|Drama
+5,Forrest Gump,Drama|Romance
+6,Inception,Action|Adventure|Sci-Fi
+7,Fight Club,Drama
+8,The Matrix,Action|Sci-Fi
+9,Goodfellas,Crime|Drama
+10,The Lord of the Rings: The Fellowship of the Ring,Adventure|Fantasy
+11,The Lord of the Rings: The Two Towers,Adventure|Fantasy
+12,The Lord of the Rings: The Return of the King,Adventure|Fantasy
+13,Star Wars: Episode IV - A New Hope,Action|Adventure|Sci-Fi
+14,Star Wars: Episode V - The Empire Strikes Back,Action|Adventure|Sci-Fi
+15,Star Wars: Episode VI - Return of the Jedi,Action|Adventure|Sci-Fi
+16,The Silence of the Lambs,Crime|Drama|Thriller
+17,Se7en,Crime|Drama|Thriller
+18,Interstellar,Adventure|Drama|Sci-Fi
+19,Parasite,Comedy|Drama|Thriller
+20,Whiplash,Drama|Music
+21,Gladiator,Action|Adventure|Drama
+22,The Prestige,Drama|Mystery|Sci-Fi
+23,The Departed,Crime|Drama|Thriller
+24,The Green Mile,Crime|Drama|Fantasy
+25,The Lion King,Animation|Adventure|Drama
+26,Back to the Future,Adventure|Comedy|Sci-Fi
+27,The Pianist,Biography|Drama|Music
+28,City of God,Crime|Drama
+29,Spirited Away,Animation|Adventure|Fantasy
+30,The Usual Suspects,Crime|Drama|Mystery
+31,Saving Private Ryan,Drama|War
+32,Schindler's List,Biography|Drama|History
+33,Avengers: Endgame,Action|Adventure|Sci-Fi
+34,Avengers: Infinity War,Action|Adventure|Sci-Fi
+35,Iron Man,Action|Adventure|Sci-Fi
+36,The Avengers,Action|Adventure|Sci-Fi
+37,Doctor Strange,Action|Adventure|Fantasy
+38,Black Panther,Action|Adventure|Sci-Fi
+39,Guardians of the Galaxy,Action|Adventure|Comedy
+40,Thor: Ragnarok,Action|Adventure|Comedy
+41,Captain America: The Winter Soldier,Action|Adventure|Sci-Fi
+42,Captain America: Civil War,Action|Adventure|Sci-Fi
+43,Ant-Man,Action|Adventure|Comedy
+44,Ant-Man and the Wasp,Action|Adventure|Comedy
+45,Shutter Island,Mystery|Thriller
+46,Django Unchained,Drama|Western
+47,The Hateful Eight,Crime|Drama|Mystery
+48,Kill Bill: Vol. 1,Action|Crime|Thriller
+49,Kill Bill: Vol. 2,Action|Crime|Thriller
+50,Reservoir Dogs,Crime|Drama|Thriller
+51,Once Upon a Time in Hollywood,Comedy|Drama
+52,Inglourious Basterds,Adventure|Drama|War
+53,The Wolf of Wall Street,Biography|Comedy|Crime
+54,Titanic,Drama|Romance
+55,Avatar,Action|Adventure|Fantasy
+56,Avatar: The Way of Water,Action|Adventure|Fantasy
+57,The Truman Show,Comedy|Drama|Sci-Fi
+58,Eternal Sunshine of the Spotless Mind,Drama|Romance|Sci-Fi
+59,Her,Drama|Romance|Sci-Fi
+60,La La Land,Comedy|Drama|Music
+61,The Social Network,Biography|Drama
+62,The Big Short,Biography|Comedy|Drama
+63,Moneyball,Biography|Drama|Sport
+64,The Blind Side,Biography|Drama|Sport
+65,The Pursuit of Happyness,Biography|Drama
+66,American Beauty,Drama
+67,Requiem for a Dream,Drama
+68,Donnie Darko,Drama|Mystery|Sci-Fi
+69,Memento,Mystery|Thriller
+70,The Sixth Sense,Drama|Mystery|Thriller
+71,Unbreakable,Drama|Mystery|Sci-Fi
+72,Split,Horror|Thriller
+73,Glass,Drama|Sci-Fi|Thriller
+74,Signs,Drama|Mystery|Sci-Fi
+75,The Village,Drama|Mystery|Thriller
+76,Oldboy,Action|Drama|Mystery
+77,Memories of Murder,Crime|Drama|Mystery
+78,The Handmaiden,Drama|Romance|Thriller
+79,Train to Busan,Action|Horror|Thriller
+80,Peninsula,Action|Horror|Thriller
+81,Okja,Adventure|Drama|Sci-Fi
+82,Snowpiercer,Action|Drama|Sci-Fi
+83,The Host,Drama|Horror|Sci-Fi
+84,The Man from Nowhere,Action|Crime|Thriller
+85,I Saw the Devil,Crime|Drama|Thriller
+86,The Chaser,Crime|Drama|Thriller
+87,The Wailing,Drama|Horror|Mystery
+88,Burning,Drama|Mystery|Romance
+89,Shoplifters,Crime|Drama
+90,Drive,Crime|Drama|Thriller
+91,Baby Driver,Action|Crime|Drama
+92,The Notebook,Drama|Romance
+93,A Walk to Remember,Drama|Romance
+94,500 Days of Summer,Comedy|Drama|Romance
+95,The Fault in Our Stars,Drama|Romance
+96,Me Before You,Drama|Romance
+97,Love Actually,Comedy|Drama|Romance
+98,Notting Hill,Comedy|Drama|Romance
+99,Pretty Woman,Comedy|Drama|Romance
+100,Runaway Bride,Comedy|Drama|Romance

@@ -27,6 +27,7 @@ WITH ROW
 CALL db.schema.visualization()
 
 
+// Exemplo 01 
 // Exemplo de uso do CALL
 MATCH (t:Team)
 CALL (t) {
@@ -36,4 +37,6 @@ CALL (t) {
 RETURN (t) as Teams, Players, r
 
 
-//
+// Exemplo 02
+// Lendo um arquivo .CSV de filmes existente na pasta 'data' (Este exemplo visa uso do VS Code)
+LOAD CSV WITH HEADERS FROM '/data/film.csv'
