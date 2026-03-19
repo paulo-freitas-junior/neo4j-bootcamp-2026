@@ -431,3 +431,4 @@ CREATE (d)-[:DIRECTED]->(s);
 
 MATCH (d:Director {name:"Chris Brancato"}), (s:Serie {title:"Narcos"})
 CREATE (d)-[:DIRECTED]->(s);
+

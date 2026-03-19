@@ -16,7 +16,7 @@ WITH [
 ] AS produtos
 
 UNWIND produtos AS produto
-MERGE (p.Produto {id: produto.id})  // verifica se o NÓ PRODUTO já existe na base antes de criar o produto
+MERGE (p:Produto {id: produto.id})  // verifica se o NÓ PRODUTO já existe na base antes de criar o produto
 SET p.nome = produto.nome,
     p.preco = produto.preco,
     p.categoria = produto.categoria,

@@ -39,9 +39,13 @@ RETURN (t) as Teams, Players, r;
 
 // Exemplo 02
 // Lendo um arquivo .CSV de filmes existente na pasta 'data' (Este exemplo visa uso do VS Code)
+/* 
+Uso do CALL como subquerie para popular o banco de dados usando MERGE
+*/
 LOAD CSV WITH HEADERS FROM 'https://github.com/paulo-freitas-junior/neo4j-bootcamp-2026/blob/main/data/film.csv' AS row
-MERGE (m:Movie {movieId: toInteger(row.movedId)})  // cria um nó Movie e para cada linha do arquivo .csv cria id (numérico inteiro) do filme
-SET m.title = row.title,
-    m.genres = split(row.genres, '|')
-RETURN m
-LIMIT 100;
+CALL (row) 
+       {MERGE (m:Movie {movieId: toInteger(row.movieId)})  // cria um nó Movie e para cada linha do arquivo .csv cria id (numérico inteiro) do filme
+       SET m.title = row.title,
+           m.genres = split(row.genres, '|')     // No arquivo .csv existe mais de um gênero para cada filme, ele é dividido por '|'
+       } IN TRANSACTIONS OF 20 ROWS              // batch de 20 em 20 
+
