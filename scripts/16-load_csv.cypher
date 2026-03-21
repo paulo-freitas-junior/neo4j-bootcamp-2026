@@ -48,4 +48,3 @@ CALL (row)
        SET m.title = row.title,
            m.genres = split(row.genres, '|')     // No arquivo .csv existe mais de um gênero para cada filme, ele é dividido por '|'
        } IN TRANSACTIONS OF 20 ROWS              // batch de 20 em 20 
-
