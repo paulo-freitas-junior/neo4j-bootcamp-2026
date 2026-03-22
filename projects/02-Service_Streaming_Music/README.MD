@@ -250,6 +250,11 @@ UNWIND ['Outside of This Town', '662','Fresh Out'] AS titulo
 MATCH (t:Musica {title: titulo})
 MERGE (a)-[:PERFORMED]->(t);
 
+MATCH (a:Artista {name: 'Buddy Guy'})
+UNWIND ["Damn Right, I've Got the Blues",'Mustang Sally'] as titulo
+MATCH (t:Musica {title:titulo})
+MERGE (a)-[:PERFORMED]->(t);
+
 // Pop
 MATCH (a:Artista {name: 'Dua Lipa'})
 UNWIND ['Houdini', 'Levitating', 'Don\'t Start Now'] AS titulo
@@ -273,7 +278,7 @@ MERGE (a)-[:PERFORMED]->(t);
 
 MATCH (a:Artista {name: 'The Weeknd'})
 UNWIND ['Blinding Lights', 'Starboy', 'Save Your Tears'] AS titulo
-MATCH (t:Musicas {title: titulo})
+MATCH (t:Musica {title: titulo})
 MERGE (a)-[:PERFORMED]->(t);
 
 // Heavy Metal
