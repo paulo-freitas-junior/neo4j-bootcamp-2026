@@ -460,11 +460,18 @@ LIMIT 10
 MATCH (a:Artista)-[:PERFORMED]->(m)
 RETURN DISTINCT a.name AS artista_recomendado;
 ```
+<div align="center">
+  <img src="/images/project02/q1.jpg" width="100%" alt="Resposta 1">
+</div>
+
 - Quais são as bandas de rock existentes?
 ```
 MATCH (g:Generos {name: 'Heavy Metal'})<-[:IN_GENERO]-(m:Musica)<-[:PERFORMED]-(a:Artista)
 RETURN DISTINCT a.name AS Bandas_Heavy_Metal;
 ```
+<div align="center">
+  <img src="/images/project02/q2.jpg" width="100%" alt="Resposta 2">
+</div>
 
 - Quais são as bandas com maior número de seguidores?
 ```
@@ -472,6 +479,9 @@ MATCH (a:Artista)
 RETURN a.name, a.followers_mln
 ORDER BY a.followers_mln DESC
 ```
+<div align="center">
+  <img src="/images/project02/q3.jpg" width="100%" alt="Resposta 3">
+</div>
 
 - Quais músicas possuem maior média de BPM?
 ```
@@ -479,6 +489,9 @@ MATCH (m:Musica)
 RETURN m.title, m.bpm
 ORDER BY m.bpm DESC
 ```
+<div align="center">
+  <img src="/images/project02/q4.jpg" width="100%" alt="Resposta 4">
+</div>
 
 - Quais nacionalidades possuem mais bandas nessa base de dados?
 ```
@@ -487,6 +500,9 @@ RETURN a.origin AS Nacionalidade, count(a) AS Numero_de_Bandas
 ORDER BY Numero_de_Bandas DESC
 LIMIT 5;
 ```
+<div align="center">
+  <img src="/images/project02/q5.jpg" width="100%" alt="Resposta 5">
+</div>
 
 2. Algorítmos de GDS
 
