@@ -17,6 +17,9 @@ A modelagem foi desenvolvida aplicando 4 *Nós* específicos: Usuário, Música,
   <img src="/images/project02/visualisation.png" width="100%" alt="Macro Visão - Modelagem do Projeto">
 </div>
 
+<div align="center">
+  <img src="/images/project02/visualisation2.png" width="100%" alt="Micro Visão - Modelagem do Projeto">
+</div>
 
 ## Etapa 3 - Conhecendo bases para conexões no grafo
 
