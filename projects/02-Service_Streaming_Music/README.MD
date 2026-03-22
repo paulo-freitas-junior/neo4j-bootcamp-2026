@@ -29,6 +29,7 @@ Solicitei para uma IA Generativa criar um arquivo contendo exemplos de músicas,
 - **Gêneros**: Nome do tipo de gênero, estilo da música, popularidade na plataforma (porcentagem).
 - **Música**: Título da música, duração em segundos, ano de criação, batidas por minuto (BPM).
 
+Todos os arquivos de dados (CSV, JSON) encontram-se na pasta `data/Projeto02`.
 
 ## Etapa 4 - Populando o o banco de dados com as informações
 
