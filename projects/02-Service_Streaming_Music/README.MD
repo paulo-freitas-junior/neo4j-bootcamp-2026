@@ -464,7 +464,7 @@ RETURN DISTINCT a.name AS artista_recomendado;
   <img src="/images/project02/q1.jpg" width="100%" alt="Resposta 1">
 </div>
 
-- Quais são as bandas de rock existentes?
+- Quais são as bandas de Heavy Metal existentes?
 ```
 MATCH (g:Generos {name: 'Heavy Metal'})<-[:IN_GENERO]-(m:Musica)<-[:PERFORMED]-(a:Artista)
 RETURN DISTINCT a.name AS Bandas_Heavy_Metal;
